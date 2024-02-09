@@ -1,0 +1,29 @@
+/* CSS */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #A8DADC; /* Powder Blue */
+  }
+  
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .title {
+    color: #F1FAEE; /* Honeydew */
+  }
+  
+  .icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .notification-icon,
+  .message-icon {
+    font-size: 24px;
+    color: #457B9D; /* Steel Blue */
+  }
+  

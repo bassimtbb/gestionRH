@@ -1,0 +1,47 @@
+.contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #A8DADC; /* Powder Blue */
+}
+
+.cardM{
+    box-shadow: 10px 10px 5px grey; /* adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:32rem ;
+    width: 60rem ;
+    background-color: #F1FAEE; /* Honeydew */
+    border-radius:0 50px 0  50px;
+}
+
+.pic{
+    height: 100%;
+    align-items: center;
+    width: 60%;
+    background-position: top;
+    background-size: cover; 
+    display: flex;
+    background-image: url("../../assets/forgot2.svg");
+}
+
+mat-form-field{
+    height: 6rem;
+}
+.btnl {
+    background-color: #457B9D; /* Steel Blue */
+    color: white; /* Text color */
+}
+
+.formm {
+    position: relative;
+    padding: 2rem;
+    height: 110%;
+    width: 40%;
+    gap:0rem;
+    display: grid;
+    background-color: #457B9D; /* Steel Blue */
+    border-radius:0 50px 0  50px;
+}
