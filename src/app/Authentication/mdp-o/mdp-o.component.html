@@ -1,39 +1,35 @@
-<div class="contain">
-    <div class="cardM">   
-        <form  class="formm" >
-          <h2 style="margin: 0%;">Réinitialiser le mot de passe</h2>
-          <span style="color: white;">Laissez-nous vous aider</span>
+<div class=" card " >
 
-              <mat-form-field>
-                      <mat-label>Enter your email</mat-label>
-                      <input matInput placeholder="pat@example.com" [formControl]="email" required>
-                      @if (email.invalid) {
-                        <mat-error>{{getErrorMessage()}}</mat-error>
-                      }
-                </mat-form-field>
-                <mat-form-field>
-                        <mat-label>Telephone</mat-label>
-                        <span matTextPrefix>+216 &nbsp;</span>
-                        <input type="number" matInput minlength="8"  maxlength="8" [formControl]="tel"  placeholder="55 555 555" pattern="[0-9]{8}">
-                        @if (tel.invalid) {
-                            <mat-error>{{getErrorMessageTel()}}</mat-error>
-                          }
-                </mat-form-field>
-                <mat-form-field>
-                    <mat-label>CIN</mat-label>
-                    <input type="number" matInput minlength="8"  maxlength="8" [formControl]="cin"  placeholder="11111111" pattern="[0-9]{8}">
-                    @if (cin.invalid) {
-                        <mat-error>{{getErrorMessagecin()}}</mat-error>
-                      }
-            </mat-form-field>
-              <button style="background-color: #39759a; color: white;" mat-raised-button type="submit" >Réinitialiser le mot de passe</button>
-              <a style="text-align: center; color: rgb(0, 0, 132);" aria-level="5" routerLinkActive="List-item-active" routerLink="/Login">S'identifier
-              </a>
+<form  class="form" >
+  <h4 style="margin: 0%;">Réinitialiser le mot de passe</h4>
+  <span style="color: white;">Laissez-nous vous aider</span>
 
-        </form>
-        <div class="pic">
-      </div>
-    </div>
-  </div>
-  
-  
+      <mat-form-field>
+              <mat-label>Enter your email</mat-label>
+              <input matInput placeholder="pat@example.com" [formControl]="email" required>
+              @if (email.invalid) {
+                <mat-error>{{getErrorMessage()}}</mat-error>
+              }
+        </mat-form-field>
+        <mat-form-field>
+                <mat-label>Telephone</mat-label>
+                <span matTextPrefix>+216 &nbsp;</span>
+                <input type="number" matInput minlength="8"  maxlength="8" [formControl]="tel"  placeholder="55 555 555" pattern="[0-9]{8}">
+                @if (tel.invalid) {
+                    <mat-error>{{getErrorMessageTel()}}</mat-error>
+                  }
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>CIN</mat-label>
+            <input type="number" matInput minlength="8"  maxlength="8" [formControl]="cin"  placeholder="11111111" pattern="[0-9]{8}">
+            @if (cin.invalid) {
+                <mat-error>{{getErrorMessagecin()}}</mat-error>
+              }
+    </mat-form-field>
+
+      <button  class="btn btn-primary"  type="submit" >Réinitialiser le mot de passe</button>
+      <a style="text-align: center; color: rgb(0, 0, 132);" aria-level="5" routerLinkActive="List-item-active" routerLink="/Login">S'identifier
+      </a>
+
+</form>
+</div>

@@ -6,5 +6,8 @@ export const routes: Routes = [
     {path:'',component:LoginComponent},
     {path:'Login',component:LoginComponent},
     {path:'forget',component:MdpOComponent},
-    {path:'dashboard',component:DashboardComponent}
+    {path:'dashboard',component:DashboardComponent,
+    children:[
+         
+      ]}
 ];

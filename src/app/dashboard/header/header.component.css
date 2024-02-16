@@ -1,29 +1,78 @@
-/* CSS */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #A8DADC; /* Powder Blue */
+
+.login-button {
+  background-color: #009970;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  text-decoration: none;
+  transition: 0.3s background-color;
   }
-  
-  .logo {
-    height: 50px;
-    width: 50px;
+  .notif-btn {
+    margin-right: 1rem;
+    background-color:#fff ;
+    color:#009970 ;
+    width: 3rem;
+    border-radius: 50px;
+border: none; 
+   height: 3rem;
   }
-  
-  .title {
-    color: #F1FAEE; /* Honeydew */
+  .navbar-brand{
+    color: #009970;
+    font-weight: bolder;
   }
-  
-  .icons {
-    display: flex;
-    gap: 10px;
+  .navbar{
+    padding: 1rem;
   }
-  
-  .notification-icon,
-  .message-icon {
-    font-size: 24px;
-    color: #457B9D; /* Steel Blue */
+  .login-button:hover {
+  background-color: #00b383;
   }
-  
+  .navbar-toggler {
+  border: none;
+  font-size: 1.25 rem;
+  }
+  .navbar-toggler:focus, .btn-close:focus {
+  box-shadow: none;
+  outline: none;
+  }
+  .nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+    }
+    .nav-link:hover, .nav-link.active {
+    color: #000;
+    }
+    .pic-profile{
+      background-image: url("../../../app/assets/profile_pic.svg");
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      border: 2px solid #666777;
+
+    }
+    .link-profile{
+      cursor: pointer;
+      align-items: center;
+      flex-wrap: nowrap;
+      display: flex;
+      gap: 6px;
+    }
+@media (min-width: 991px) {
+    .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before, .nav-link.active::before {
+      width: 100%;
+      visibility: visible;
+  }
+}

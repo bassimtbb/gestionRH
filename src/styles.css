@@ -1,4 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+.root{ 
+/* Couleur principale : blanc */
+--white: #FFFFFF;
+
+/* Couleur secondaire : violet */
+--purple: #8A2BE2;
+
+/* Couleur accent : orange */
+--orange: #FFA500;
+
+/* Couleur de fond : gris clair */
+--light-grey: #F0F0F0;
+
+/* Couleur de texte : gris foncé */
+--dark-grey: #444444;
+
+/* Couleur supplémentaire : vert */
+--green: #76BC49;}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

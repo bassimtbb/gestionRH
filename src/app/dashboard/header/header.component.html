@@ -1,10 +1,47 @@
-<!-- HTML -->
-<header class="header">
-    <img src="logo.png" alt="Logo" class="logo">
-    <h1 class="title">Your Title</h1>
-    <div class="icons">
-      <i class="notification-icon">🔔</i>
-      <i class="message-icon">💬</i>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <img class="navbar-brand me-auto" href="#" src="https://saiph-labo.com/wp-content/uploads/2023/07/logo-s.png" width="110" height="70" alt="SAIPH" id="logo">
+    <!-- <a class="navbar-brand me-auto" href="#">Saiph</a> -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li *ngFor="let link of linksE" class="nav-item">
+              <a class="nav-link mx-lg-2 " aria-current="page" routerLinkActive="List-item-active" routerLink="/forget">{{link}}</a>
+            </li>
+            <li *ngFor="let link of linksRHR" class="nav-item">
+              <a *ngIf="1" class="nav-link mx-lg-2 " aria-current="page" href="#">{{link}}</a>
+            </li>   
+            <li *ngFor="let link of linksAD" class="nav-item">
+              <a *ngIf="0" class="nav-link mx-lg-2 " aria-current="page" href="#">{{link}}</a>
+            </li>   
+            <li  *ngFor="let link of linksSH" class="nav-item">
+              <a *ngIf="0" class="nav-link mx-lg-2 " aria-current="page" href="#">{{link}}</a>
+            </li>   
+                       
+          </ul>
+        </div>
     </div>
-  </header>
-  
+    <div class="dropdown">
+      <button  class="btn btn-success position-relative notif-btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-bell">        </i>  
+        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+          <span class="visually-hidden">New alerts</span>
+        </span>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a *ngFor="let notification of notifications" class="dropdown-item" href="#">{{ notification }}</a>
+      </div>
+    </div>
+      <div class="link-profile" >
+          <a  class=" nav-link username-profile ml " >USER-NAME</a>
+          <div  class="pic-profile " ></div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  </div>
+</nav>

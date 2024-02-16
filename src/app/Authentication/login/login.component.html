@@ -1,33 +1,29 @@
-<div class="contai">
-    <div class="cardL">   
-        <form class="form" action="">
-          <h2>S'identifier</h2>
-              <mat-form-field>
-                      <mat-label>Enter your email</mat-label>
-                      <input matInput placeholder="pat@example.com" [formControl]="email" required>
-                      @if (email.invalid) {
-                        <mat-error>{{getErrorMessage()}}</mat-error>
-                      }
-                </mat-form-field>
-                <mat-form-field>
-                <mat-label>Enter your password</mat-label>
-                <input matInput [type]="hide ? 'password' : 'text'">
-                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                </button>
-              </mat-form-field>
-              <button  routerLinkActive="List-item-active" routerLink="/dashboard" style="background-color: #39759a; color: white;" mat-raised-button type="submit" >Se connecter</button>
-              <div style="display: flex; justify-content: space-between;">
-                <div>
-                  <label aria-level="5" for="save">Souviens-toi de moi</label>
-                  <input type="checkbox" name="save" id="save" >
-                </div>  
-                <a style="color: rgb(0, 0, 132);" aria-level="5" routerLinkActive="List-item-active" routerLink="/forget">Mot de passe oublié?</a>
-              </div>
-        </form>
-        <div class="pic">
-      </div>
-    </div>
-  </div>
-  
-  
+
+  <div class=" card " >
+  <form class="form" action="">
+      <h3 style="text-align: center;">S'identifier</h3>
+          <mat-form-field>
+                  <mat-label>Enter your email</mat-label>
+                  <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                  @if (email.invalid) {
+                    <mat-error>{{getErrorMessage()}}</mat-error>
+                  }
+            </mat-form-field>
+            <mat-form-field>
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+
+          <button  routerLinkActive="List-item-active" routerLink="/dashboard" class="btn btn-primary"  type="submit" >Se connecter</button>
+          <div style="display: flex; justify-content: space-between;">
+            <div>
+              <label aria-level="5" for="save">Souviens-toi de moi</label>
+              <input type="checkbox" name="save" id="save" >
+            </div>  
+            <a style="color: rgb(0, 0, 132);" aria-level="5" routerLinkActive="List-item-active" routerLink="/forget">Mot de passe oublié?</a>
+          </div>
+    </form>
+</div>
