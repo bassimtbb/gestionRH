@@ -1,0 +1,40 @@
+<div class="containe">
+    <div class="entete">
+        <h3>Mes demandes</h3>
+        <button type="button" class="btn btn-success" routerLinkActive="List-item-active" routerLink="/dashboard/demandes/Ddemande">Déposer une demande</button>
+
+    </div>
+
+  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-success" for="btnradio1">Toutes les Demandes</label>
+      
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-success" for="btnradio2">Demande Valider</label>
+      
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-success" for="btnradio3">Demande en attente</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+        <label class="btn btn-outline-success" for="btnradio4">Demande refuse</label>
+    </div>
+
+   
+    <table class="table table-striped table-hover">
+        <thead>
+            <th>Type</th>
+            <th>Statut</th>
+            <th>Date</th>
+            <th></th>
+         </thead>
+        <tbody>
+            <tr *ngFor="let demande of demandes">
+                <td>{{ demande.Type }}</td>
+                <td ><p [ngClass]="getStatusClass(demande.Statut)">{{ demande.Statut }}</p></td>
+                <td>{{ demande.Date }}</td>
+                <td><button type="button" class="btn btn-primary">Télécharger</button></td>
+              </tr>
+        </tbody>
+      </table>
+      <mat-paginator [length]="length" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions"></mat-paginator>
+</div>

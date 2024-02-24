@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@50&;display=swap');
+.search-sect{
+  background-color:rgb(255, 255, 255) ;
+  padding: .5rem;
+  border-radius:10px ;
+  margin-bottom: 4px;
+}
+.sidenav{
+  height: 67vh;
+  width: 25vw; 
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(58, 65, 111);
+  background-image: linear-gradient(to right, rgba(238, 240, 248, 0.5), rgb(238, 240, 248), rgba(238, 240, 248, 0.5));
+  font-family: Poppins !important;
+  margin: 0px;
+  padding: .5rem;
+  border-radius:10px ;
+  background-color: aqua;
+}
+.enlinge {
+  color: white;
+  background-color: green;
+  border: 2px solid green;
+  padding: 2px;
+  border-radius: 10px;
+  width: fit-content;
+  text-align: center;
+
+}
+
+.horslinge {
+  color: white;
+  background-color: red;
+  border: 2px solid red;
+  padding: 2px;
+  border-radius: 10px;
+  width: fit-content;  
+  text-align: center;
+}
+.avatar-sm {
+  height: calc(1.5em + 1.2rem) !important;
+  width: calc(1.5em + 1.2rem) !important;
+}
+.list-group{ 
+  gap: 4px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 37vh; /* Adjust as needed */
+
+
+}
+.list-group-item:hover{
+  cursor: pointer;
+  color: rgb(63, 66, 84);
+  background-color: rgba(239, 239, 239, 0.581);
+}
+@media screen and (max-width:770px){ 
+  .list-group-item,.sidenav{
+    width: fit-content;
+  } 
+  .badge,.search-sect,.ms-2{
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+.enlinge {
+    color: white;
+    background-color: green;
+    border: 2px solid green;
+    padding: 2px;
+    border-radius: 10px;
+    width: fit-content;
+    text-align: center;
+  
+  }
+  .avatar-sm {
+    height: calc(1.5em + 1.2rem) !important;
+    width: calc(1.5em + 1.2rem) !important;
+  }
+  .horslinge {
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+    padding: 2px;
+    border-radius: 10px;
+    width: fit-content;  
+    text-align: center;
+  }
+.messages{ 
+    padding: .5rem;
+    background-color: aqua;
+    display: grid;
+    border-radius: 10px;
+    height: 67vh;
+    width: 70vw;  }
+.card{
+    width: 100%;
+    margin-bottom: 0rem;
+
+    max-height: 64.5vh; /* Adjust as needed */
+    
+}
+
+.chat-search .input-group-text i {
+    -webkit-transition: all .25s ease 0s;
+    transition: all .25s ease 0s;
+    cursor: pointer;
+  }
+  .card-body {
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 46vh; /* Adjust as needed */
+}
+
+  .input-group-append{
+    background-color: white;
+  }
+  .chat-search .input-group-text i:hover {
+    -webkit-transition: all .25s ease 0s;
+    transition: all .25s ease 0s;
+    -webkit-transform: translateY(-2px) scale(1);
+    transform: translateY(-2px) scale(1);
+  }
+  .card-header,.card-footer{
+    height: fit-content;
+  }
+
+
+@media screen and (max-width:600px){  
+    
+}

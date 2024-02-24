@@ -10,16 +10,17 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
             <li *ngFor="let link of linksE" class="nav-item">
-              <a class="nav-link mx-lg-2 " aria-current="page" routerLinkActive="List-item-active" routerLink="/forget">{{link}}</a>
+              <a class="nav-link mx-lg-2 " aria-current="page" routerLinkActive="List-item-active" routerLink={{link.root}}>{{link.titre}}</a>
             </li>
+       
             <li *ngFor="let link of linksRHR" class="nav-item">
-              <a *ngIf="1" class="nav-link mx-lg-2 " aria-current="page" href="#">{{link}}</a>
+              <a *ngIf="0" class="nav-link mx-lg-2 " aria-current="page"outerLinkActive="List-item-active" routerLink={{link.root}}>{{link.titre}}</a>
             </li>   
             <li *ngFor="let link of linksAD" class="nav-item">
-              <a *ngIf="0" class="nav-link mx-lg-2 " aria-current="page" href="#">{{link}}</a>
+              <a *ngIf="0" class="nav-link mx-lg-2 " aria-current="page"outerLinkActive="List-item-active" routerLink={{link.root}}>{{link.titre}}</a>
             </li>   
             <li  *ngFor="let link of linksSH" class="nav-item">
-              <a *ngIf="0" class="nav-link mx-lg-2 " aria-current="page" href="#">{{link}}</a>
+              <a *ngIf="0" class="nav-link mx-lg-2 " aria-current="page"outerLinkActive="List-item-active" routerLink={{link.root}}>{{link.titre}}</a>
             </li>   
                        
           </ul>

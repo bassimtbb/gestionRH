@@ -1,0 +1,70 @@
+
+.containe{
+    background-color: white;
+    border-radius:20px ;
+    margin: .7rem;
+    padding: 1rem;
+    padding-bottom: 0rem;
+    display: grid;
+    gap: 0rem;
+
+}
+/* Define your custom status colors */
+.valid {
+    color: white;
+    background-color: green;
+    border: 2px solid green;
+    padding: 2px;
+    border-radius: 10px;
+    width: fit-content;
+    text-align: center;
+
+  }
+  .pending {
+    color: white;
+    background-color: rgb(243, 243, 97);
+    border: 2px solid rgb(243, 243, 97);
+    padding: 2px;
+    border-radius: 10px;
+    width: fit-content;
+    text-align: center;
+
+  }
+  .rejected {
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+    padding: 2px;
+    border-radius: 10px;
+    width: fit-content;  
+    text-align: center;
+}
+  
+.entete{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:1rem;
+    justify-content: space-between;
+
+}
+table{
+    margin: 0%;
+}
+
+
+@media screen and (max-width:600px){  
+        .containe{
+        margin-top: .2rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding: .5rem;
+        border-radius: 0%; 
+        width: 100%;   
+    }
+  }
+ @media screen and (max-width:400px){  
+    .entete{
+        display: grid;   
+    }
+
+}

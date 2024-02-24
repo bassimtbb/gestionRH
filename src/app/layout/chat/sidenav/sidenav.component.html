@@ -1,0 +1,21 @@
+<div class="sidenav">
+  <div class="search-sect">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+    <ol class="list-group ">
+      <li  *ngFor="let contact of contacts" fo class="list-group-item d-flex justify-content-between align-items-start">
+        <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796884-ee3aafb6-8083-48ec-9cfb-51b95eae08fe.jpg">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">{{contact.username}}</div>
+          <p [ngClass]="getStatusClass(contact.Statut)">{{ contact.Statut }}</p>
+        </div>
+        <span class="badge text-bg-primary rounded-pill">14</span>
+      </li>
+
+    </ol>
+  
+
+</div>
