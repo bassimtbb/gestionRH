@@ -1,0 +1,102 @@
+<div class="demande">
+    <div class="typeD"> 
+        <i class="bi bi-arrow-left-circle-fill" routerLinkActive="List-item-active" routerLink="/dashboard/demandes/Ddemande"></i> 
+                       <p>DEMANDE DE PRET</p>
+    </div>
+    <form class="form">
+        <div class="E-Ju ">
+            <label>Entité Juridique :</label>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="E-Juridique" id="saiph" value="saiph">
+            <label class="form-check-label" for="saiph">Société SAIPH</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="E-Juridique" id="steripharm" value="steripharm">
+            <label class="form-check-label" for="steripharm">Société STERIPHARM</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="E-Juridique" id="ifrikia-S" value="ifrikia-S">
+            <label class="form-check-label" for="ifrikia-S">Société IFRIKIA SANTE</label>                
+            </div>
+        </div>
+        <div class="form-floating mb-2">
+            <input type="Text" class="form-control" id="nom_prenom"  value="Bassim Tabbeb" disabled>
+            <label for="nom_prenom">Nom et prénom</label>
+        </div>
+        <div style="display: flex;flex-wrap: wrap; justify-content: space-evenly; ">
+            <div class="form-floating mb-2">
+                <input type="Text" class="form-control" id="qualite"  value="Qualité" disabled>
+                <label for="qualite">Employé en Qualité de</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="Text" class="form-control" id="matricule"  value="FT23TG" disabled>
+                <label for="matricule">Matricule</label>
+            </div>
+
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="matricule"  value='10/03/2023' disabled>
+                <label for="matricule">Date de recrutement</label>
+            </div>
+
+            <div class="form-floating mb-2">
+                <input type="Text" class="form-control" id="direction"  value="direction" disabled>
+                <label for="direction">Direction</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="Text" class="form-control" id="Service"  value="Service" disabled>
+                <label for="Service">Service</label>
+            </div>
+        </div>
+        <div class="row g-4 align-items-center">
+            <div class="col-auto">
+            <p >Montant du prêt </p>
+            </div>
+            <div class="col-auto">
+                <div class="input-group mb-2">
+                    <input style="max-width: 4.7rem;" type="number" class="form-control" placeholder="00" >
+                    <span class="input-group-text" id="basic-addon2">DT</span>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 align-items-center">
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label">Motif & pièce(s) justificative(s)</label>
+            </div>
+            <div class="col-auto">
+                <textarea type="text" class="form-control form-icon-trailing" id="date" ></textarea>
+            </div>
+          </div>
+          <div>
+            <p>Crédit bancaire en cours :</p> 
+            <div class="ml-5 form-check">
+                <input class="form-check-input" type="radio" name="E-Juridique" id="Oui" value="Oui">
+                <label class="form-check-label" for="Oui">Oui</label>
+                <div class="input-group mb-2">
+                    <input style="max-width:12rem;" type="number" class="form-control" placeholder="Retenues Mensuelle" >
+                    <span class="input-group-text" id="basic-addon2">DT</span>
+                </div>
+                </div>
+                <div class="ml-5 form-check">
+                    <input class="form-check-input" type="radio" name="E-Juridique" id="Non" value="Non">
+                    <label class="form-check-label" for="Non">Non</label>
+                </div>  	 
+        </div>
+        <div>
+            <p>Rembourser la dite somme sur :</p> 
+            <div class="ml-5 form-check">
+                <input class="form-check-input" type="radio" name="E-Juridique" id="Oui" value="Oui">
+                <label class="form-check-label" for="Oui">Salaire par tranches mensuels de </label>
+                <div class="input-group mb-2">
+                    <input style="max-width:12rem;" type="number" class="form-control" placeholder="Retenues Mensuelle" >
+                    <span class="input-group-text" id="basic-addon2">DT/mois</span>
+                </div>
+                </div>
+                <div class="ml-5 form-check">
+                    <input class="form-check-input" type="radio" name="E-Juridique" id="Non" value="Non">
+                    <label class="form-check-label" for="Non">13 ème mois</label>
+                </div>  	 
+        </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+
+    </form>
+</div>

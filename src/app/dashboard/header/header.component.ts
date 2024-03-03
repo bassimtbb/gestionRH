@@ -16,7 +16,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  linksE = [{titre:'Home',root:"/dashboard/home"}, {titre:'Demandes',root:"/dashboard/demandes"}, {titre:'Formations',root:"/dashboard/formations"}, {titre:'Chat',root:"/dashboard/chat"}];
+  linksE = [{titre:'Accueil',root:"/dashboard/home"}, {titre:'Demandes',root:"/dashboard/demandes"}, {titre:'Formations',root:"/dashboard/formations"}, {titre:'Messagerie',root:"/dashboard/chat"}];
   linksRHR=  [{titre:'Dashboard',root:"/dashboard/ee"},{titre:'Employé',root:"/dashboard/ee"}, {titre:'Congé',root:"/dashboard/ee"}];
   linksAD=  [{titre:'Dashboard',root:"/dashboard/ee"}, {titre:'Performance',root:"/dashboard/ee"}, {titre:'Rapport',root:"/dashboard/ee"}, {titre:'Evénement',root:"/dashboard/ee"}];
   linksSH=  [{titre:'Employés',root:"/dashboard/ee"}, {titre:'Congé',root:"/dashboard/"}];

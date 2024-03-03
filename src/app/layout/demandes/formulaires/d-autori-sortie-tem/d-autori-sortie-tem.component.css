@@ -1,0 +1,49 @@
+.demande{
+    background-color: white;
+    border-radius:20px ;
+    margin: 1rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    display: grid;
+    gap: .2 rem;
+}
+.bi-arrow-left-circle-fill{
+    cursor: pointer;
+    font-size: xx-large;
+    transition: transform 0.3s; /* pour ajouter une transition fluide */
+  }
+  
+  .bi-arrow-left-circle-fill:hover {
+    transform: translate(-10px, 0); /* pour déplacer l'icône de 10 pixels vers la gauche */
+  }
+  
+.typeD{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin-bottom: 2rem;
+    p{  
+        text-align: center;
+        width:80% ; 
+        border: 2px solid black;
+        border-radius: 10px;
+        margin-bottom: 0%;
+        padding: 2px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        font-size: x-large;
+    }
+}
+.E-Ju{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.form{
+   margin-right:  3rem;
+   margin-left:  3rem;
+   display: grid;
+   gap: 1rem; 
+}

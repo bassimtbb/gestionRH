@@ -6,30 +6,17 @@
                 <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796884-ee3aafb6-8083-48ec-9cfb-51b95eae08fe.jpg">
                 <div class="ms-2 me-auto">
                     <div class="fw-bold">{{contact.username}}</div>
-                    <p [ngClass]="getStatusClass(contact.Statut)">{{ contact.Statut }}</p>
+                    <p [ngClass]="getStatusClassS(contact.Statut)">{{ contact.Statut }}</p>
                   </div>
               </li>
         </div>
         <div class="card-body text-success">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-         
+              <div *ngFor="let message of messages" [ngClass]="getStatusClassM(message.sender)">
+                  <div class="content">
+                    <p>{{message.content}}</p>
+                    <span>{{message.date}}</span>
+                  </div>
+              </div>
         </div>
         <div class="card-footer bg-transparent ">
             <div class="chat-search pl-3 pr-3">

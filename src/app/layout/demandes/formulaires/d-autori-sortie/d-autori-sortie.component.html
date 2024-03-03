@@ -1,0 +1,99 @@
+<div class="demande">
+    <div class="typeD"> 
+        <i class="bi bi-arrow-left-circle-fill" routerLinkActive="List-item-active" routerLink="/dashboard/demandes/Ddemande"></i>
+                        <p>AUTORISATION DE SORTIE</p>
+    </div>
+    <form class="form">
+        <div class="E-Ju ">
+            <label>Entité Juridique :</label>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="E-Juridique" id="saiph" value="saiph">
+            <label class="form-check-label" for="saiph">Société SAIPH</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="E-Juridique" id="steripharm" value="steripharm">
+            <label class="form-check-label" for="steripharm">Société STERIPHARM</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="E-Juridique" id="ifrikia-S" value="ifrikia-S">
+            <label class="form-check-label" for="ifrikia-S">Société IFRIKIA SANTE</label>                
+            </div>
+        </div>
+        <div class="form-floating mb-2">
+            <input type="Text" class="form-control" id="nom_prenom"  value="Bassim Tabbeb" disabled>
+            <label for="nom_prenom">Nom et prénom</label>
+        </div>
+        <div style="display: flex;flex-wrap: wrap; justify-content: space-evenly; ">
+            <div class="form-floating mb-2">
+                <input type="Text" class="form-control" id="qualite"  value="Qualité" disabled>
+                <label for="qualite">Employé en Qualité de</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="Text" class="form-control" id="matricule"  value="FT23TG" disabled>
+                <label for="matricule">Matricule</label>
+            </div>
+  
+            <div class="form-floating mb-2">
+                <input type="Text" class="form-control" id="direction"  value="direction" disabled>
+                <label for="direction">Direction</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="Text" class="form-control" id="Service"  value="Service" disabled>
+                <label for="Service">Service</label>
+            </div>
+        </div>
+        <div class="row g-4 align-items-center">
+            <div class="col-auto">
+            <p >Sollicite votre accord pour une autorisation de sortie </p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-around;">
+            <div class="row g-4 align-items-center">
+                <div class="col-auto">
+                    <label for="inputPassword6" class="col-form-label">Durée </label>
+                </div>
+                <div class="col-auto">
+                    <div class="input-group mb-2">
+                        <input style="max-width: 4.7rem;" type="number" class="form-control" placeholder="00" >
+                        <span class="input-group-text" id="basic-addon2">Heure</span>
+                    </div>
+                                </div>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-auto">
+                  <label for="inputPassword6" class="col-form-label">Date </label>
+                </div>
+                <div class="col-auto">
+                    <input type="date" class="form-control form-icon-trailing" id="date" >
+                </div>
+              </div>
+    
+        </div>
+
+        <div style="display: flex; justify-content: space-around;">
+            <div class="row g-4 align-items-center">
+                <div class="col-auto">
+                    <label for="inputPassword6" class="col-form-label">Heure de Sortie </label>
+                </div>
+                <div class="col-auto">
+                    <input type="time" class="form-control form-icon-trailing" id="date" >
+
+                </div>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-auto">
+                  <label for="inputPassword6" class="col-form-label">Heure de Retour </label>
+                </div>
+                <div class="col-auto">
+                    <input type="time" class="form-control form-icon-trailing" id="date" >
+                </div>
+              </div>
+        </div>
+        <div class="form-floating mb-2">
+            <textarea class="form-control" id="qualite"  value="Qualité" ></textarea>
+            <label for="qualite">Motif</label>
+        </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+
+    </form>
+</div>

@@ -23,11 +23,47 @@
   }
 .messages{ 
     padding: .5rem;
-    background-color: aqua;
+    background-color: rgb(230, 234, 255);
     display: grid;
     border-radius: 10px;
     height: 67vh;
     width: 70vw;  }
+
+  
+.content{
+  display: grid;
+  gap: 5px;
+  }
+
+.left{
+  display: flex;
+  .content{
+    justify-items: start;
+    }
+  p{
+    background-color: aqua;
+  }
+}
+.right{
+      display: flex;
+      justify-content: right;
+      .content{
+        justify-items: end;
+        }
+      p{
+        background-color: rgb(0, 213, 213);
+      }
+}
+.content p{
+  border-radius: 10px;
+  padding: 5px;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 0;
+    }
+.content span{
+font-size: x-small;
+        }
 .card{
     width: 100%;
     margin-bottom: 0rem;
@@ -42,8 +78,10 @@
     cursor: pointer;
   }
   .card-body {
-    overflow-y: auto; /* Enable vertical scrolling */
-    max-height: 46vh; /* Adjust as needed */
+    overflow-y: auto; 
+    max-height: 46vh;
+    display: grid;
+    gap: 1rem;
 }
 
   .input-group-append{
@@ -60,6 +98,14 @@
   }
 
 
-@media screen and (max-width:600px){  
-    
+  @media screen and (max-width:770px){ 
+    .messages{ 
+    width: fit-content;
+    height: fit-content;
+  }
+  .card{ width: 82vw;  
+    height: 60vh;
+  }
 }
+
+

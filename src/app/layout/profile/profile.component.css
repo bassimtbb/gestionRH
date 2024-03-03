@@ -1,0 +1,74 @@
+
+.containe{
+    display: flex;
+    gap: 1rem;
+    margin: .7rem;
+    height: 83vh;
+      
+}
+.left{
+    width: 25vw;
+    background-color: white;
+    border-radius:20px ;
+    padding: 1rem;
+}
+.center{
+    width: 50vw;
+    background-color: white;
+    border-radius:20px ;
+    padding: 1rem;
+}
+.right{
+    width: 25vw;
+    background-color: white;
+    border-radius:20px ;
+    padding: 1rem;
+}
+.entete{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:1rem;
+    justify-content: space-between;
+
+}
+.card-img-top{
+    border-radius: 50%;
+    max-width:14rem ;
+    max-height: 11rem;
+    border: 3px solid green;
+}
+.btn{
+    width: fit-content;
+    border-radius:50% ;
+}
+.Ch-pic-btn{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.img{
+    display: grid;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    max-height: 40vh;
+}
+.pi{
+    display: grid;
+padding-left: 2rem;
+    gap: .5rem;
+    margin-top: 1rem
+}
+
+.titre{
+    margin-bottom: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2px;
+}
+.value{
+    font-family:Arial, Helvetica, sans-serif;
+
+    padding-left: 12px;
+    margin-bottom: 0%;
+
+}
